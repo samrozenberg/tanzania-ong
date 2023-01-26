@@ -35,5 +35,20 @@
 }
 
 .home-volunteering {
-  background-color: blue;
+  background: linear-gradient(0.49turn, white, rgba(red, 0.4));
+}
+
+.info-cards {
+  width: 100%
+}
+.info-card {
+  border: 1px solid grey;
+  width: 30%;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-page-icon {
+  font-size: 36px;
 }
