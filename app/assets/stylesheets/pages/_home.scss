@@ -1,1 +1,39 @@
 // Specific CSS for your home-page
+.pages-home {
+  // background-image: url("home-picture.jpg");
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 84vh;
+  .banner-text {
+    padding: 16% 0;
+  }
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px black;
+}
+
+.donate-button {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+.home-volunteering {
+  background-color: blue;
+}
