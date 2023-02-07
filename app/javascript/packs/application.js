@@ -10,7 +10,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-$(document).ready(function () {
+$(document).on('turbolinks:load', function () {
   console.log("Hello");
   $('.slick-carousel').slick({
     dots: false,
