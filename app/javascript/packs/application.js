@@ -15,8 +15,10 @@ $(document).on('turbolinks:load', function () {
   $('.slick-carousel').slick({
     dots: false,
     infinite: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<img class="slick-prev" src="/assets/arrow-left.png">',
+    nextArrow: '<img class="slick-next" src="/assets/arrow-right.png">',
     speed: 800,
     slidesToShow: 2,
     slidesToScroll: 1

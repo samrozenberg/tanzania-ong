@@ -80,10 +80,18 @@
 
 .slick-carousel .slick-prev {
   left: 0;
-  background-image: url('africa-logo.png');
+  filter: hue-rotate(90deg) saturate(150%) brightness(150%);
+  &:hover {
+    background-color: rgba($color: rgb(204, 204, 204), $alpha: 0.8);
+    cursor: pointer;
+  }
 }
 
 .slick-carousel .slick-next {
   right: 0;
-  background-image: url('africa-logo.png');
+  filter: hue-rotate(90deg) saturate(150%) brightness(150%);
+  &:hover {
+    background-color: rgba($color: rgb(204, 204, 204), $alpha: 0.8);
+    cursor: pointer;
+  }
 }
