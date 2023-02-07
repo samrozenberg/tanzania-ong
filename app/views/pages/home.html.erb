@@ -1,36 +1,41 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(<%= image_path('home-picture.jpg') %>);">
-  <%= render "shared/navbar" %>
-  <div class="container banner-text">
-    <h1>Healthy Horizons Africa</h1>
-    <p>The biggest organization to reach all people with health need through community outreach and health camps across Tanzania.</p>
-  </div>
+<div class="desktop-only">
+  <p>This website is only accessible on computers. Please visit us on a desktop device to continue.</p>
 </div>
-<div class="home-volunteering m-3 pt-3 pb-3">
-  <div class="container info-cards d-flex justify-content-between">
-    <div class="info-card">
-      <i class="home-page-icon fa-solid fa-people-group"></i>
-      <h3>What we do</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
-    </div>
-    <div class="info-card">
-      <i class="home-page-icon fa-solid fa-stethoscope"></i>
-      <h3>Who we are</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
-    </div>
-    <div class="info-card">
-      <i class="home-page-icon fa-solid fa-earth-africa"></i>
-      <h3>Where we work</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
+<div class="homepage-wrapper">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(<%= image_path('home-picture.jpg') %>);">
+    <%= render "shared/navbar" %>
+    <div class="container banner-text">
+      <h1>Healthy Horizons Africa</h1>
+      <p>The biggest organization to reach all people with health need through community outreach and health camps across Tanzania.</p>
     </div>
   </div>
-  <h4 class="text-center mt-4">Volunteer and Bring health care for all in Tanzania !</h4>
-</div>
-<div class="m-3">
-<div class="slick-carousel">
-  <% image_number = 1 %>
-  <% 4.times do |i| %>
-    <%= image_tag "IMG_#{image_number}.jpeg", class: 'slick-image' %>
-    <% image_number += 1 %>
-  <% end %>
-</div>
+  <div class="home-volunteering m-3 pt-3 pb-3">
+    <div class="container info-cards d-flex justify-content-between">
+      <div class="info-card">
+        <i class="home-page-icon fa-solid fa-people-group"></i>
+        <h3>What we do</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
+      </div>
+      <div class="info-card">
+        <i class="home-page-icon fa-solid fa-stethoscope"></i>
+        <h3>Who we are</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
+      </div>
+      <div class="info-card">
+        <i class="home-page-icon fa-solid fa-earth-africa"></i>
+        <h3>Where we work</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et tempora soluta tenetur maxime beatae id itaque consequuntur quia commodi nisi dolorum cumque, provident saepe! Suscipit minus exercitationem harum et?</p>
+      </div>
+    </div>
+    <h4 class="text-center mt-4">Volunteer and Bring health care for all in Tanzania !</h4>
+  </div>
+  <div class="m-3">
+    <div class="slick-carousel">
+      <% image_number = 1 %>
+      <% 4.times do |i| %>
+        <%= image_tag "IMG_#{image_number}.jpeg", class: 'slick-image' %>
+        <% image_number += 1 %>
+      <% end %>
+    </div>
+  </div>
 </div>

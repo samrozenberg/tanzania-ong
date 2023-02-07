@@ -1,7 +1,4 @@
 // Specific CSS for your home-page
-.pages-home {
-  // background-image: url("home-picture.jpg");
-}
 
 .banner {
   background-size: cover;
@@ -93,5 +90,21 @@
   &:hover {
     background-color: rgba($color: rgb(204, 204, 204), $alpha: 0.8);
     cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: block;
+  }
+  .homepage-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: none;
   }
 }

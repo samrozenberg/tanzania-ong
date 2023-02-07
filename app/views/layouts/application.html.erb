@@ -18,8 +18,8 @@
   </head>
 
   <body class="<%=params[:controller]%>-<%=params[:action]%>">
-    <%= render "shared/navbar" unless params[:action] == "home" %>
-    <div class="<%='container' unless params[:action] == "home" %>">
+    <%= render "shared/navbar" unless params[:action] == "home" || params[:action] == "about_us"  %>
+    <div class="<%='container' unless params[:action] == "home" || params[:action] == "about_us" %>">
       <%= yield %>
     </div>
   </body>
