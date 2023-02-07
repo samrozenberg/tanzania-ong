@@ -10,6 +10,19 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+$(document).ready(function () {
+  console.log("Hello");
+  $('.slick-carousel').slick({
+    dots: false,
+    infinite: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    speed: 800,
+    slidesToShow: 2,
+    slidesToScroll: 1
+  });
+});
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

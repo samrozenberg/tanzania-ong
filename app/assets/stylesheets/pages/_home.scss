@@ -28,14 +28,14 @@
 }
 
 .donate-button {
-  color: white;
-  &:hover {
-    color: white;
-  }
+  --bs-btn-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-active-color: white;
 }
 
 .home-volunteering {
   background: linear-gradient(0.49turn, rgb(255, 240, 240), rgba(rgb(255, 140, 140), 0.4));
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 .info-cards {
@@ -51,4 +51,39 @@
 
 .home-page-icon {
   font-size: 36px;
+}
+
+.slick-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slick-image {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-carousel .slick-prev,
+.slick-carousel .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-carousel .slick-prev {
+  left: 0;
+  background-image: url('africa-logo.png');
+}
+
+.slick-carousel .slick-next {
+  right: 0;
+  background-image: url('africa-logo.png');
 }
