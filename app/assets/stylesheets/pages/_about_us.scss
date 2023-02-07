@@ -1,0 +1,26 @@
+.about-us-top {
+  background: linear-gradient(0.49turn, rgb(255, 240, 240), rgba(rgb(255, 140, 140), 0.4));
+  height: 40vh;
+}
+
+.about-us-title {
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.about-us-bottom-wrapper {
+  width: 36%;
+  margin: 0 auto;
+  display: block;
+}
+.about-us-image {
+  width: 100%;
+  margin-top: -20%;
+  margin-bottom: 1rem;
+}
+
+.bottom-wrapper {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url("world_map.jpg");
+  background-size: cover;
+  height: 100vh;
+}
